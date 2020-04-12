@@ -1,11 +1,11 @@
 using Test, Documenter
 using DSPG_Manual
 
-using Weave
+# using Weave
 
-foreach(filename -> convert_doc(joinpath(@__DIR__, "..", "docs", "src", filename),
-                                joinpath(@__DIR__, "..", "docs", "src", replace(filename, ".jmd" => ".md"))),
-        filter(filename -> endswith(filename, ".jmd"), readdir(joinpath(@__DIR__, "..", "docs", "src"))))
+# foreach(filename -> convert_doc(joinpath(@__DIR__, "..", "docs", "src", filename),
+#                                 joinpath(@__DIR__, "..", "docs", "src", replace(filename, ".jmd" => ".md"))),
+#         filter(filename -> endswith(filename, ".jmd"), readdir(joinpath(@__DIR__, "..", "docs", "src"))))
 
 @testset "Documentation" begin
     using Documenter, DSPG_Manual
