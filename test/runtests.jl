@@ -1,7 +1,7 @@
-using Test, Documenter
+using Documenter
 using DSPG_Manual
 
-@testset "Documentation" begin
+# @testset "Documentation" begin
     using Documenter, DSPG_Manual
 
     DocMeta.setdocmeta!(DSPG_Manual,
@@ -27,5 +27,4 @@ using DSPG_Manual
              source = joinpath(@__DIR__, "..", "docs", "src"),
              build = joinpath(@__DIR__, "..", "docs", "build"),
              )
-    @test true
-end
+# end
