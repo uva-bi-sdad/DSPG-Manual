@@ -11,7 +11,7 @@ using DSPG_Manual
     makedocs(sitename = "DSPG Manual",
              modules = [DSPG_Manual],
              pages = [
-                 "Home" => "Index.md",
+                 "Home" => "index.md",
                  "Onboarding" => "Onboarding.md",
                  "Infrastructure" => [
                      "GitHub" => joinpath("Infrastructure", "GitHub.md")
