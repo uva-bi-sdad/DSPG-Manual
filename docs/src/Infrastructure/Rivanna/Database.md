@@ -30,6 +30,19 @@ conn = LibPQ.Connection("""
 close(conn)
 ```
 
+## From Python
+
+```
+import os, psycopg2
+conn = psycopg2.connect(host = os.getenv("PGHOST"),
+                        dbname = "sdad",
+                        user = os.getenv("db_usr"),
+                        password = os.getenv("db_pwd"))
+cur = conn.cursor()
+cur.close()
+conn.close()
+```
+
 ## pgAdmin
 
 If you wish to interact with the Postgres database through the PgAdmin interface. Install [pgAdmin](https://www.pgadmin.org/download/) in your local machine.

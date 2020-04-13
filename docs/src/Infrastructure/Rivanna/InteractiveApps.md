@@ -24,10 +24,6 @@ For the BII partition, valid numbers for the RStudio Server interactive app are:
 
 !!! warning
 
-    Memory should be at least 6GB per number of cores in the job. This is not enforced but no adhering to the rule might cause memory issues during the session.
-
-!!! warning
-
     The account information must be provided in the **Allocation** field. Leaving it blank will default to an allocation which may deplete the computing hours of allocation intended for managing permissions. DSPG fellows and interns should use `biocomplexity` or `bii_sdad` for the allocation field in the form unless there is specific account for the related project.
 
 !!! note
