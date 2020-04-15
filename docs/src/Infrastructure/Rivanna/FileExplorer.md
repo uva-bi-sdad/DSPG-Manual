@@ -38,7 +38,7 @@ For example, the National Center for Science and Engineering Statistics (NCSES) 
 
     When creating a repository for a project. You would likely want to have a `/data` directory where you can create a symbolic link to the actual data.
     ```
-    ln -s `/project/biocomplexity/sdad/projects_data/{sponsor_code}/{project_code}` path/to/repository/data
+    ln -s /project/biocomplexity/sdad/projects_data/{sponsor_code}/{project_code} path/to/repository/data
     ```
 
 !!! tip
