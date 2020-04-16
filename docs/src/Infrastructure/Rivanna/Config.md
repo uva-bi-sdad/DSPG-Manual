@@ -22,11 +22,12 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export TZ='America/New_York'
 export PGHOST=postgis1
-export db_usr={computing_id}
-export db_pwd={db_pwd}
+export DB_USR={computing_id}
+export DB_PWD={db_pwd}
+ml git/2.4.1 anaconda/2019.10-py3.7 julia/1.3.1 gcc/7.1.0 openmpi/3.1.4 R/3.6.1
 ```
 
-replacing `{computing_id}` and `{db_pwd}` with your computing ID and the `postgres1` database password for your role.
+replacing `{computing_id}` and `{DB_PWD}` with your computing ID and the `postgres1` database password for your role.
 
 ## Configuring Git / GitHub
 
