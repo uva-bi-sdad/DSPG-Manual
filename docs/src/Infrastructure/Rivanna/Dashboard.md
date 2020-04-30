@@ -8,8 +8,8 @@ All computing and software development for DSPG will occur in [Rivanna](https://
 
     It is a good idea to bookmark the uniform resource locator (URL) for the Rivanna Open On Demand dashboard.
     
-![NetBadge](https://raw.githubusercontent.com/uva-bi-sdad/DSPG-Manual/master/docs/assets/img/NetBadge.png)
+![NetBadge](../../../assets/img/NetBadge.png)
 
 - Log-in throught NetBadge using your computing ID and password or a digital certificate in your device.
 
-![Dashboard](https://raw.githubusercontent.com/uva-bi-sdad/DSPG-Manual/master/docs/assets/img/Dashboard.png)
+![Dashboard](../../../assets/img/Dashboard.png)

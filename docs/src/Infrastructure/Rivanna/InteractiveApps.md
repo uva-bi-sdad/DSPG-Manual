@@ -2,7 +2,7 @@
 
 - Click on Interactive Apps and select the one you would like. In this case the RStudio Server.
 
-![Select an Interactive App](https://raw.githubusercontent.com/uva-bi-sdad/DSPG-Manual/master/docs/assets/img/RStudioServer.png)
+![Select an Interactive App](../../../assets/img/RStudioServer.png)
 
 - The graphical user interface (GUI) provides a way to select the arguments for the Slurm interactive job.
 
@@ -30,13 +30,13 @@ For the BII partition, valid numbers for the RStudio Server interactive app are:
 
     The RStudio Server interactive session menu allows to specify the Slurm module to load (i.e., the R version). DSPG fellows and interns should select `v3.6.2`.
 
-![Interactive RStudio Server](https://raw.githubusercontent.com/uva-bi-sdad/DSPG-Manual/master/docs/assets/img/IJob.png)
+![Interactive RStudio Server](../../../assets/img/IJob.png)
 
 When all the options have been specified. Press **Launch** to queue the Slurm job.
 
 Once the resources have been allocated to the job it will start running. You can connect to the application by clicking on the Connect to RStudio Server.
 
-![Interactive RStudio Server](https://raw.githubusercontent.com/uva-bi-sdad/DSPG-Manual/master/docs/assets/img/ConnectToApp.png)
+![Interactive RStudio Server](../../../assets/img/ConnectToApp.png)
 
 !!! tip
 
