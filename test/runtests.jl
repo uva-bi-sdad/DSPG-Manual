@@ -13,8 +13,10 @@ using DSPG_Manual
              pages = [
                  "Home" => "index.md",
                  "Onboarding" => "Onboarding.md",
+                 "Data Science Framework" => "DataScienceFramework.md",
                  "Infrastructure" => [
-                     "GitHub" => joinpath("Infrastructure", "GitHub.md")
+                     "Zotero" => joinpath("Infrastructure", "Zotero.md"),
+                     "GitHub" => joinpath("Infrastructure", "GitHub.md"),
                      "Rivanna" => [
                         "Dashboard" => joinpath("Infrastructure", "Rivanna", "Dashboard.md"),
                         "File Explorer" => joinpath("Infrastructure", "Rivanna", "FileExplorer.md"),

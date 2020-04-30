@@ -1,4 +1,4 @@
-### Version Control / Hosting Platform
+# Version Control / Hosting Platform
 
 The Data Science for the Public Good Program will be using [GitHub](https://github.com/) for software development platform. GitHub, a subsidiary of Microsoft, is the world's largest Git hosting platform. If you do not have yet a GitHub account, [register](https://github.com/join) for one. I recommend using your personal email address and adding your UVA email address as an additional verified email for that account.
 

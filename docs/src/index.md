@@ -1,5 +1,7 @@
 # Home
 
+![DSPG 3 State Logo](/static/img/DSPG3StateLogo.jpg "DSPG 3 State Logo")
+
 This manual provides important and helpful information for DSPG fellows and interns for setting up the tools that everyone will be using for the program.
 
 !!! tip
