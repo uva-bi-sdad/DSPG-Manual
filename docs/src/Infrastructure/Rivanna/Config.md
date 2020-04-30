@@ -60,8 +60,7 @@ and then follow the [instructions](https://help.github.com/en/github/authenticat
 
 !!! tip
 
-	The recommended approach is for having a GPG key per email identity.
-	You can generate on Rivanna or in your sysytem and import it to Rivanna. For DSPG related work, we recommend signing every commit with a GPG key that does not does not expire associated to your UVA email address.
+	The recommended approach is for having a GPG key per email identity. You can generate on Rivanna or in your sysytem and import it to Rivanna. For DSPG related work, we recommend signing every commit with a GPG key that does not does not expire associated to your UVA email address.
 
 ### Generating a GPG key in Rivanna
 
