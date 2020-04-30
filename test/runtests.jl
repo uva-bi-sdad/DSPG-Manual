@@ -28,6 +28,6 @@ using DSPG_Manual
              ],
              source = joinpath(@__DIR__, "..", "docs", "src"),
              build = joinpath(@__DIR__, "..", "docs", "build"),
-             format = Documenter.Writers.HTMLWriter.HTML(prettyurls = parse(Bool, get(ENV, "CI", "false")),)
+            #  format = Documenter.Writers.HTMLWriter.HTML(prettyurls = parse(Bool, get(ENV, "CI", "false")),)
              )
 # end
