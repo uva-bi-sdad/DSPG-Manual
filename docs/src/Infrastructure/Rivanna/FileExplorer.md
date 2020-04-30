@@ -4,12 +4,12 @@
 
 Select the File Explorer dropdown menu and click the `Home Directory`.
 
-![File Explorer](../assets/img/File_Explorer.png)
+![File Explorer](../../../assets/img/File_Explorer.png)
 
 
 This is your home directory.
 
-![Your Home Directory](../assets/img/File_Explorer_Home.png)
+![Your Home Directory](../../../assets/img/File_Explorer_Home.png)
 
 !!! tip
 
