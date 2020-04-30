@@ -60,7 +60,7 @@ and then follow the [instructions](https://help.github.com/en/github/authenticat
 
 !!! tip
 
-	The recommended approach is for having a GPG key per email identity. You can generate on Rivanna or in your sysytem and import it to Rivanna. For DSPG related work, we recommend signing every commit with a GPG key that does not does not expire associated to your UVA email address.
+    The recommended approach is for having a GPG key per email identity. You can generate on Rivanna or in your sysytem and import it to Rivanna. For DSPG related work, we recommend signing every commit with a GPG key that does not does not expire associated to your UVA email address.
 
 ### Generating a GPG key in Rivanna
 
@@ -79,11 +79,11 @@ and follow the instructions. You should use your UVA email address and select th
 
 !!! tip
 
-	If you plan on making commits using your UVA email persona from your personal system we recommend using the same GPG key. You can export and import GPG keys across machines.
+    If you plan on making commits using your UVA email persona from your personal system we recommend using the same GPG key. You can export and import GPG keys across machines.
 
 !!! tip
 
-	When working with Git in your personal system, we recommend using the [Git Kraken](https://www.gitkraken.com/) (a GUI client). Students and educators can get a premium license for free! It also offers a GUI easy way to generate SSH/GPG keys and add them to GitHub.
+    When working with Git in your personal system, we recommend using the [Git Kraken](https://www.gitkraken.com/) (a GUI client). Students and educators can get a premium license for free! It also offers a GUI easy way to generate SSH/GPG keys and add them to GitHub.
 
 ### Adding the key to GitHub
 
