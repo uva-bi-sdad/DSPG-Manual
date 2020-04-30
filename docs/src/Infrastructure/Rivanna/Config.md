@@ -24,7 +24,7 @@ export TZ='America/New_York'
 export PGHOST=postgis1
 export DB_USR={computing_id}
 export DB_PWD={db_pwd}
-ml git/2.4.1 anaconda/2019.10-py3.7 julia/1.3.1 gcc/7.1.0 openmpi/3.1.4 R/3.6.1
+ml >/dev/null 2>&1 && ml git/2.4.1 anaconda/2019.10-py3.7 julia/1.3.1 gcc/7.1.0 openmpi/3.1.4 R/3.6.1
 ```
 
 replacing `{computing_id}` and `{DB_PWD}` with your computing ID and the `postgres1` database password for your role.
@@ -37,11 +37,7 @@ replacing `{computing_id}` and `{DB_PWD}` with your computing ID and the `postgr
 
 ## Configuring an SSH key with GitHub
 
-You add add an SSH to your GitHub account for access to GitHub (i.e., not having to input your credential every time).
-
-To generate an SSH key in Rivanna use,
-
-To generate a GPG key in Rivanna, from a Rivanna [shell](https://rivanna-portal.hpc.virginia.edu/pun/sys/shell/ssh/rivanna.hpc.virginia.edu) (available through the `Rivanna Shell Access` under `Clusters` tab in the dashboard).
+You can generate an SSH key in Rivanna which you may use for SSH connections (e.g., Git cloning using the SSH protocol from GitHub).
 
 ```
 ssh-keygen -t rsa -b 4096 -C "{computing_id}@virginia.edu"
@@ -49,16 +45,27 @@ ssh-keygen -t rsa -b 4096 -C "{computing_id}@virginia.edu"
 
 accept the default path (e.g., `/home/{computing_id}/.ssh/*`).
 
+!!! tip
+
+	You should enable a password for your SSH keys!
+
 You can inspect the public key by
 ```
 cat ~/.ssh/id_rsa.pub
 ```
 
-and follow the [instructions](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) for adding the key to GitHub.
+and then follow the [instructions](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) for adding the key to GitHub.
 
 ## Configuring a GPG key with GitHub
 
-You add add a GPG to your GitHub account for signing your Git commits.
+!!! tip
+
+	The recommended approach is for having a GPG key per email identity.
+	You can generate on Rivanna or in your sysytem and import it to Rivanna. For DSPG related work, we recommend signing every commit with a GPG key that does not does not expire associated to your UVA email address.
+
+### Generating a GPG key in Rivanna
+
+You add a GPG to your GitHub account for signing your Git commits.
 
 To generate a GPG key in Rivanna, from a Rivanna [shell](https://rivanna-portal.hpc.virginia.edu/pun/sys/shell/ssh/rivanna.hpc.virginia.edu) (available through the `Rivanna Shell Access` under `Clusters` tab in the dashboard).
 
@@ -69,7 +76,19 @@ gpg-agent --daemon --pinentry-program /usr/bin/pinentry
 gpg --full-generate-key
 ```
 
-and follow the instructions. You should use your UVA email address and select the RSA algorithm with size 4096 bits. Follow the [instructions](https://help.github.com/en/github/authenticating-to-github/adding-a-new-gpg-key-to-your-github-account) from GitHub on how to register the GPG key.
+and follow the instructions. You should use your UVA email address and select the RSA algorithm with size 4096 bits.
+
+!!! tip
+
+	If you plan on making commits using your UVA email persona from your personal system we recommend using the same GPG key. You can export and import GPG keys across machines.
+
+!!! tip
+
+	When working with Git in your personal system, we recommend using the [Git Kraken](https://www.gitkraken.com/) (a GUI client). Students and educators can get a premium license for free! It also offers a GUI easy way to generate SSH/GPG keys and add them to GitHub.
+
+### Adding the key to GitHub
+
+Follow the [instructions](https://help.github.com/en/github/authenticating-to-github/adding-a-new-gpg-key-to-your-github-account) from GitHub on how to register the GPG key.
 
 You can make it the default and sign all your commits with it through
 
