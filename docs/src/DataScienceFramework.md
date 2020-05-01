@@ -19,4 +19,3 @@ Works Cited
 ===========
 
 Keller, Sallie Ann, Stephanie Slepicka Shipp, Aaron David Schroeder, and Gizem Korkmaz. 2020. "Doing Data Science: A Framework and Case Study." Harvard Data Science Review 2 (1). DOI: [10.1162/99608f92.2d83f7f5]((https://doi.org/10.1162/99608f92.2d83f7f5)).
-
