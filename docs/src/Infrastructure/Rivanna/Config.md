@@ -27,7 +27,7 @@ export DB_PWD={db_pwd}
 ml >/dev/null 2>&1 && ml git/2.4.1 anaconda/2019.10-py3.7 julia/1.3.1 gcc/7.1.0 openmpi/3.1.4 R/3.6.1
 ```
 
-replacing `{computing_id}` and `{DB_PWD}` with your computing ID and the `postgres1` database password for your role.
+replacing `{computing_id}`, `{DB_PWD}`, and `{DB_PWD}`.
 
 ## Configuring Git / GitHub
 
@@ -60,7 +60,7 @@ and then follow the [instructions](https://help.github.com/en/github/authenticat
 
 !!! tip
 
-    The recommended approach is for having a GPG key per email identity. You can generate on Rivanna or in your sysytem and import it to Rivanna. For DSPG related work, we recommend signing every commit with a GPG key that does not does not expire associated to your UVA email address.
+    The recommended approach is for having a GPG key per email identity. You can generate on Rivanna or on your sysytem and import it to Rivanna. For DSPG related work, we recommend signing every commit with a GPG key that does not does not expire associated to your UVA email address.
 
 ### Generating a GPG key in Rivanna
 
@@ -83,7 +83,7 @@ and follow the instructions. You should use your UVA email address and select th
 
 !!! tip
 
-    When working with Git in your personal system, we recommend using the [Git Kraken](https://www.gitkraken.com/) (a GUI client). Students and educators can get a premium license for free! It also offers a GUI easy way to generate SSH/GPG keys and add them to GitHub.
+    When working with Git on your personal system, we recommend using the [Git Kraken](https://www.gitkraken.com/) (a GUI client). Students and educators can get a premium license for free! It also offers a GUI easy way to generate SSH/GPG keys and add them to GitHub.
 
 ### Adding the key to GitHub
 
@@ -102,15 +102,15 @@ Your `~/.gitconfig` file should now look something like
 
 ```
 [user]
-	email = {computing_id}@virginia.edu
-	name = {Full Legal Name (based on the GPG key step)}
-	signingkey = {Your GPG key ID}
+    email = {computing_id}@virginia.edu
+    name = {Full Legal Name (based on the GPG key step)}
+    signingkey = {Your GPG key ID}
 [credential]
-	helper = cache
+    helper = cache
 [gpg]
-	program = gpg
+    program = gpg
 [commit]
-	gpgSign = true
+    gpgSign = true
 ```
 
 You can edit the file to match the entries if any are missing.
