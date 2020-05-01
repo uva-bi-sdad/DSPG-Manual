@@ -47,7 +47,7 @@ accept the default path (e.g., `/home/{computing_id}/.ssh/*`).
 
 !!! tip
 
-	You should enable a password for your SSH keys!
+    You should enable a password for your SSH keys!
 
 You can inspect the public key by
 ```
