@@ -9,11 +9,8 @@ DSPG projects will be using the `sdad` database in the `postgis1` Postgres serve
 ## From R
 
 ```R
-library(RPostgres)
-conn <- dbConnect(drv = Postgres(),
-                  dbname = "sdad",
-                  user = Sys.getenv(x = "DB_USR"),
-                  password = Sys.getenv(x = "DB_PWD"))
+library(RPostgreSQL)
+conn <- dbConnect(drv = PostgresSQL(), dbname = "sdad")
 dbDisconnect(conn = conn)
 ```
 
@@ -21,12 +18,7 @@ dbDisconnect(conn = conn)
 
 ```julia
 using LibPQ
-conn = LibPQ.Connection("""
-                        host = $(get(ENV, "PGHOST", ""))
-                        dbname = sdad
-                        user = $(get(ENV, "DB_USR", ""))
-                        password = $(get(ENV, "DB_PWD", ""))
-                        """);
+conn = LibPQ.Connection("dbname = sdad");
 close(conn)
 ```
 
@@ -34,10 +26,7 @@ close(conn)
 
 ```
 import os, psycopg2
-conn = psycopg2.connect(host = os.getenv("PGHOST"),
-                        dbname = "sdad",
-                        user = os.getenv("DB_USR"),
-                        password = os.getenv("DB_PWD"))
+conn = psycopg2.connect(dbname = "sdad")
 cur = conn.cursor()
 cur.close()
 conn.close()
