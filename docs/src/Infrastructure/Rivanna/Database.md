@@ -10,7 +10,7 @@ DSPG projects will be using the `sdad` database in the `postgis1` Postgres serve
 
 ```R
 library(RPostgreSQL)
-conn <- dbConnect(drv = PostgresSQL(), dbname = "sdad")
+conn <- dbConnect(drv = PostgreSQL(), dbname = "sdad")
 dbDisconnect(conn = conn)
 ```
 
